@@ -5,13 +5,13 @@ body{
 }
 
 h1{
+  font-family: 'DancingScriptRegular';
   text-align:center;
   color:blue;
-  font-family: 'DancingScriptRegular';
   font-size:400%;
 }
 
-p {
+p{
   font-family: 'DancingScriptRegular';
   font-weight: normal;
   font-style: normal;
