@@ -1,1 +1,21 @@
+/* The heading (Duy) */
+h1 {
+   font-family: 'GrotesqueBourgeoisieRegular';
+   font-weight: normal;
+   font-style: normal;
+   text-align:center;
+   margin-top: 10px;
+   margin-bottom: 10px;
+   background-color: #5871b1;
+   color: #fff;
+   font-size: 600%;
+   padding: 10px;
+}
 
+/* Light color (Duy) */
+.white{
+   border: 1px solid black;
+   background-color: #fbe7f9;
+   height:125px;
+   width:125px;
+}
