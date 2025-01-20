@@ -19,3 +19,24 @@ h1 {
    height:125px;
    width:125px;
 }
+
+/* Set the row (Duy) */
+.row{
+   display: flex;
+   margin-left:20%;
+   margin-right:10%;
+}
+
+/* Control the way the chessboard appear (Duy) */
+#container {
+   margin-right:5%;
+   text-align: center;
+   margin-top:5%;
+}
+
+/* Control the image (Duy) */
+img {
+   display: block;
+   margin-top: 15%;
+   margin-left: 10%;
+}
