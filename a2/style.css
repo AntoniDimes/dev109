@@ -32,15 +32,17 @@ h1 {
 .row{
    display: flex;
    margin: center;
+   justify-content: center; 
 }
 
 /* Control the way the chessboard appear (Duy) */
 #container {
-   margin-right:10%;
    text-align: center;
-   margin-top:20%;
-   margin-left:10%;
-   margin-bottom:5%;
+   margin: 0;
+   justify-content: center; 
+   align-items: center;   
+   margin: 0 auto; 
+   margin-top: 5%;
 }
 
 /* Control the image (Duy) */
