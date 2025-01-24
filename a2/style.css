@@ -20,6 +20,14 @@ h1 {
    width:125px;
 }
 
+/* Dark color (James) */
+.black{
+   border: 1px solid black;
+   width: 125px;
+   height: 125px;
+   background-color:#787878;
+}
+
 /* Set the row (Duy) */
 .row{
    display: flex;
@@ -29,14 +37,28 @@ h1 {
 
 /* Control the way the chessboard appear (Duy) */
 #container {
-   margin-right:5%;
+   margin-right:10%;
    text-align: center;
-   margin-top:5%;
+   margin-top:20%;
+   margin-left:10%;
+   margin-bottom:5%;
 }
 
 /* Control the image (Duy) */
+/* Removed margin-left because images were off center (James) */
 img {
    display: block;
    margin-top: 15%;
-   margin-left: 10%;
+}
+
+/* Add background image (James) */
+body {
+  background-image:url("https://images.pexels.com/photos/956999/milky-way-starry-sky-night-sky-star-956999.jpeg");
+}
+
+/* Footer (James) */
+#footer {
+ border:solid 1px;
+ padding: 10px;
+ margin:10px;
 }
