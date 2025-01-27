@@ -1,1 +1,70 @@
+* {
+	font-family: Arial, Verdana, sans-serif;
+	color: #f3bed4;
+	text-align: center;
+   }
 
+h1 {
+   font-family: 'SputnikRegular';
+   font-weight: bold;
+   font-style: normal;
+}
+
+body {
+	width: 90%;
+    margin: 0 auto;
+   }
+
+#content {
+	overflow: auto;
+   }
+
+#nav, #feature, #footer {
+	margin: 1%;
+   }
+
+.column1, .column2, .column3 {
+	width: 31.3%;
+	float: left;
+	margin: 1%;
+   }
+
+.column3 {
+	margin-right: 0%;
+    background-color: #8a69a1;
+   }
+
+.column1 {
+    background-color: #b0697f;
+}
+
+.column2 {
+    background-color: #9c6889;
+}
+
+li {
+	display: inline;
+	padding: 0.5em;
+   }
+
+#nav, #footer {
+	background-color: #bd6599;
+	padding: 0.5em 0;
+   }
+
+#feature, .article {
+	height: 10em;
+	margin-bottom: 1em;
+   }
+
+#feature {
+  background-color: #68618f;
+  background-image: url("https://i.ibb.co/K7wDtxB/kitty-removebg-preview.png");
+  background-size: 100px 110px;
+  background-position: right;
+  background-repeat:no-repeat;
+}
+
+body {
+  background-image: url("https://i.ibb.co/C1Qrwgv/4a8c4d84eabb82a852afa2d3c1de79ec-transformed.png");
+}
