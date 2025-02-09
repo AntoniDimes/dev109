@@ -9,7 +9,7 @@ function upLeft(pHeight, pColorEven, pColorOdd, pSymbol) {
   var rLine = "";
   for (var i = 0; i < pHeight; i++) {
     rLine += "<p>";
-    // Add leading spaces for right-side alignment
+    // Add leading spaces
     for (var s = 0; s < pHeight - i; s++) {
       rLine += "<span style='visibility:hidden'>" + pSymbol + "</span>";
     }
@@ -35,7 +35,7 @@ function downLeft(pHeight, pColorEven, pColorOdd, pSymbol) {
   var rLine = "";
   for (var i = pHeight; i > 0; i--) {
     rLine += "<p>";
-    // Add leading spaces for alignment
+    // Add leading spaces
     for (var s = 0; s < pHeight - i; s++) {
       rLine += "<span style='visibility:hidden'>" + pSymbol + "</span>";
     }
