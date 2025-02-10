@@ -1,47 +1,55 @@
 * {
-  font-family: 'LemonRegular', Verdana, sans-serif;
-  color: #26605c;
-  text-align: center;
+	font-family: 'LemonRegular', Verdana, sans-serif;
+	color: #26605c;
+	text-align: center;
+   }
+
+h1 {
+   font-family: 'LemonRegular';
+   font-weight: bold;
+   font-style: normal;
+   color: #e1e0d2;
 }
 
-#thanks {
-  font-size: 50px;
+img {
+  border: 0;
 }
 
-#aHeader {
+body {
+	width: 90%;
+    margin: 0 auto;
+   }
+
+#nav, #feature, #footer {
+	margin: 1%;
+   }
+
+li {
+	display: inline;
+	padding: 0.5em;
+   }
+
+#nav, #footer {
+	background-color: #b697b6;
+	padding: 0.5em 0;
+   }
+
+.article {
+  height: 20em;
+  margin-bottom: 1em;
+}
+
+.feature {
+  width: 68%;
+  float: left;
   background-color: #ede5a6;
-  height: 1.5em;
   margin: 1%;
 }
 
-p {
-  font-family: "Times New Romans";
-  font-weight: bold;
-}
-
-#aLink {
-  text-decoration: none;
-}
-
-#aLink:hover {
-    text-decoration: underline;
-  }
-
-#artifact {
+.images {
+  width: 28%; 
+  float: left;
   background-color: #ede5a6;
-  height: 18em;
-  margin: 1%;
-}
-
-#course {
-  background-color: #ede5a6;
-  height: 10em;
-  margin: 1%;
-}
-
-#course {
-  background-color: #ede5a6;
-  height: 10em;
   margin: 1%;
 }
 
@@ -51,63 +59,39 @@ p {
   margin: 1%;
 }
 
-h1 {
-  font-family: 'LemonRegular';
+#aHeader {
+  background-color: #ede5a6;
+  height: 1.5em;
+  margin: 1%;
+}
+
+p {
+  font-family: "Times New Roman", serif;
   font-weight: bold;
-  font-style: normal;
-  color: #e1e0d2;
 }
 
-body {
-  width: 90%;
-  margin: 0 auto;
-}
-
-#nav, #feature, #footer {
-  margin: 1%;
-}
-
-li {
-  display: inline;
-  padding: 0.5em;
-}
-
-#nav, #footer {
-  background-color: #b697b6;
-  padding: 0.5em 0;
-}
-
-.article {
-  height: 20em;
-  margin-bottom: 1em;
-}
-
-.feature {
-  width: 68%; 
-  float: left;
+.artifact {
   background-color: #ede5a6;
+  height: 18em;
   margin: 1%;
 }
 
-.html {
-  width: 48%;
-  float: left;
+.aLink {
+  text-decoration: none;
+}
+
+.aLink:hover {
+  text-decoration: underline;
+}
+
+#course {
   background-color: #ede5a6;
+  height: 10em;
   margin: 1%;
 }
 
-.css {
-  width: 48%; 
-  float: left;
-  background-color: #ede5a6;
-  margin: 1%;
-}
-
-.images {
-  width: 28%;
-  float: left;
-  background-color: #ede5a6;
-  margin: 1%;
+#thanks {
+  font-size: 50px;
 }
 
 #content {
