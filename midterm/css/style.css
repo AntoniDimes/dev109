@@ -4,6 +4,41 @@
   text-align: center;
 }
 
+#aHeader {
+  background-color: #ede5a6;
+  height: 1.5em;
+  margin: 1%;
+}
+
+p {
+  font-family: Times New Romans;
+  font-weight: bold;
+}
+
+#aLink {
+  text-decoration: none;
+}
+
+#aLink:hover {
+    text-decoration: underline;
+  }
+
+#aImg {
+  object-fit: ;
+}
+
+#artifact {
+  background-color: #ede5a6;
+  height: 18em;
+  margin: 1%;
+}
+
+#course {
+  background-color: #ede5a6;
+  height: 10em;
+  margin: 1%;
+}
+
 #course {
   background-color: #ede5a6;
   height: 10em;
