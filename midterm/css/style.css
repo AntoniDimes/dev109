@@ -84,7 +84,7 @@ p {
   text-decoration: underline;
 }
 
-#course {
+.course {
   background-color: #ede5a6;
   height: 10em;
   margin: 1%;
