@@ -4,6 +4,12 @@
   text-align: center;
 }
 
+#about {
+  background-color: #ede5a6;
+  height: 20em;
+  margin: 1%;
+}
+
 h1 {
   font-family: 'LemonRegular';
   font-weight: bold;
