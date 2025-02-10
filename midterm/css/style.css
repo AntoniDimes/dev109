@@ -4,6 +4,12 @@
   text-align: center;
 }
 
+#course {
+  background-color: #ede5a6;
+  height: 10em;
+  margin: 1%;
+}
+
 #about {
   background-color: #ede5a6;
   height: 20em;
