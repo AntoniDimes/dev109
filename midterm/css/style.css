@@ -1,1 +1,61 @@
+* {
+	font-family: 'LemonRegular', Verdana, sans-serif;
+	color: #26605c;
+	text-align: center;
+   }
 
+h1 {
+   font-family: 'LemonRegular';
+   font-weight: bold;
+   font-style: normal;
+   color: #e1e0d2;
+}
+
+body {
+	width: 90%;
+    margin: 0 auto;
+   }
+
+#nav, #feature, #footer {
+	margin: 1%;
+   }
+
+li {
+	display: inline;
+	padding: 0.5em;
+   }
+
+#nav, #footer {
+	background-color: #b697b6;
+	padding: 0.5em 0;
+   }
+
+.article {
+  height: 20em;
+  margin-bottom: 1em;
+}
+
+.feature {
+  width: 68%;
+  float: left;
+  background-color: #ede5a6;
+  margin: 1%;
+}
+
+.images {
+  width: 28%; 
+  float: left;
+  background-color: #ede5a6;
+  margin: 1%;
+}
+
+#content {
+  overflow: hidden;
+}
+
+body {
+  background-image: url("https://i.ibb.co/SXgrbpgf/upscalemedia-transformed.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
