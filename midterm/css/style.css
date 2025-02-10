@@ -53,6 +53,22 @@ li {
   margin: 1%;
 }
 
+.css {
+  width: 48%;
+  float: left;
+  background-color: #ede5a6;
+  margin: 1%;
+  height: 1450px;
+}
+
+.html {
+  width: 48%; 
+  float: left;
+  background-color: #ede5a6;
+  margin: 1%;
+  height: 1450px;
+}
+
 #about {
   background-color: #ede5a6;
   height: 20em;
