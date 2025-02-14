@@ -1,8 +1,0 @@
-.container {
-  display: flex;
-  justify-content: space-between;
-}
-
-#upRight, #downRight{
-  width: 100%; 
-}
