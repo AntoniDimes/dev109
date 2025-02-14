@@ -4,11 +4,6 @@ function createRhombus(pHeight, pColorEven, pColorOdd, pSymbol) {
   upRight(pHeight, pColorEven, pColorOdd, pSymbol);
   downRight(pHeight, pColorEven, pColorOdd, pSymbol);
 }
-function createRhombus(pHeight, pColorEven, pColorOdd, pSymbol) {
-upRight(pHeight, pColorEven, pColorOdd, pSymbol);
-downRight(pHeight, pColorEven, pColorOdd, pSymbol);
-
-}
 
 function upRight(pHeight, pColorEven, pColorOdd, pSymbol){
 var rLine ="";
