@@ -6,7 +6,7 @@ if (userInput === null || userInput.trim() === "" || isNaN(userInput)) {
     userInput = parseInt(userInput);
 }
 
-var table = userInput; // Unit of table
+var table = userInput;
 
 var msg = '<h2>Multiplication Table</h2>';
 
