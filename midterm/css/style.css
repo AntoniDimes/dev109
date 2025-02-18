@@ -39,6 +39,11 @@ li {
   margin-bottom: 1em;
 }
 
+#solution {
+  font-family: "Times New Roman", serif;
+  font-weight: bold;
+}
+
 .feature {
   width: 68%;
   float: left;
@@ -90,14 +95,6 @@ p {
   background-color: #ede5a6;
   height: 18em;
   margin: 1%;
-}
-
-.aLink {
-  text-decoration: none;
-}
-
-.aLink:hover {
-  text-decoration: underline;
 }
 
 .course {
