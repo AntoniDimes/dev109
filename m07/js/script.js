@@ -9,9 +9,18 @@ function Hotel(name, rooms, booked) {
 }
 
 function Display() {
-  var hotel = new Hotel("Sunset", 86, 10);
-  var available_room = hotel.checkAvailability();
-  document.getElementById("result").innerHTML = hotel.name + " rooms: " + available_room;
+  var hotel1 = new Hotel("Quay", 45, 10);
+  var hotel2 = new Hotel("Park", 53, 10);
+  var hotel3 = new Hotel("Sunset", 86, 10);
+  
+  document.getElementById("hotel1").innerHTML = 
+  hotel1.name + " rooms: " + hotel1.checkAvailability();
+  
+  document.getElementById("hotel2").innerHTML = 
+  hotel2.name + " rooms: " + hotel2.checkAvailability();
+  
+  document.getElementById("result").innerHTML = 
+  hotel3.name + " rooms: " + hotel3.checkAvailability();
 }
 
-Display();
+window.onload = Display;
