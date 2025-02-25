@@ -63,3 +63,8 @@ button {
 button:hover {
   background: #0056b3;
 }
+
+p {
+  margin-top: 50px;
+  text-align: center;
+}
