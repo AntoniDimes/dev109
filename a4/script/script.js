@@ -138,13 +138,11 @@ function validateForm() {
     validZipcode = true;
   }
 
-  /*
   // 5) SET FOCUS 
   if (firstErrorField) {
     firstErrorField.focus();
     return false;
   }
-  */
 
   // 6) RETURN FINAL VALIDATION RESULT
   return validFirstname && validLastname && validEmail && validPhone && 
