@@ -1,1 +1,65 @@
+h1 {
+  text-align: center;
+}
 
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+}
+        
+.form-container {
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  border: 1px solid;
+  width: 450px;
+}
+        
+label {
+  display: block;
+  margin: 10px 0 5px;
+  font-weight: bold;
+}
+        
+input, select {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+} 
+
+#passwordError, #usernameError, #firstnameError, #lastnameError, 
+#emailError, #phoneError, #addressError, #cityError, #stateError,
+#countryError, #zipcodeError {
+  color: red;
+  font-weight: bold;
+  font-size: 1em;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+#comment {
+  height: 60px;
+}
+
+button {
+  margin-top: 10px;
+  padding: 10px;
+  background: #38bd4f;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  font-weight: bold;
+}
+        
+button:hover {
+  background: #0056b3;
+}
