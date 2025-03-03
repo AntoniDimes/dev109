@@ -18,6 +18,7 @@ var captionImages = [
 var index = 0;
 var timer = 4;
 var interval;
+var autoSlide = false; // Default state: no auto-slide
 
 // Function to update the image and caption
 function updateImage() {
@@ -45,11 +46,15 @@ function resetTimer() {
   clearInterval(interval);
   timer = 4;
   document.getElementById("timer").textContent = timer;
-  interval = setInterval(autoSlide, 1000);
+
+  // If auto-slide is on, start the timer
+  if (autoSlide) {
+    interval = setInterval(autoSlideFunction, 1000);
+  }
 }
 
 // Function to auto slide
-function autoSlide() {
+function autoSlideFunction() {
   timer--;
   document.getElementById("timer").textContent = timer;
     
@@ -59,9 +64,18 @@ function autoSlide() {
   }
 }
 
+// Function to turn on and off auto-slide
+function OnOffAutoSlide() {
+  autoSlide = document.getElementById("autoSlideCheckbox").checked; // Fixed variable name
+  if (autoSlide) {
+    resetTimer();
+  } else {
+    clearInterval(interval);
+    document.getElementById("timer").textContent = "—";
+  }
+}
+
 // Event Listeners for the buttons
 document.getElementById("previous").addEventListener("click", back);
 document.getElementById("next").addEventListener("click", next);
-
-// Start auto slide 
-interval = setInterval(autoSlide, 1000);
+document.getElementById("autoSlideCheckbox").addEventListener("change", OnOffAutoSlide);
