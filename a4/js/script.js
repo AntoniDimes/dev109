@@ -7,7 +7,6 @@ function validateForm() {
   var validUsername = false;
   var firstErrorField = null; // Focus textbox
   var validPassword = false;
-  // All the password requirements
   var passwordRequirments = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%^&*(),.?":{}|<>]).{1,7}$/;
   var validAddress = false;
   var validCity = false;
@@ -28,8 +27,7 @@ function validateForm() {
   var country = document.getElementById("country").value.trim();
   var zipcode = document.getElementById("zipcode").value.trim();
 
-  
-  //  3) RESET ERROR MESSAGES
+  // 3) RESET ERROR MESSAGES
   document.getElementById("firstnameError").innerHTML = "";
   document.getElementById("lastnameError").innerHTML = "";
   document.getElementById("emailError").innerHTML = "";
@@ -41,19 +39,19 @@ function validateForm() {
   document.getElementById("stateError").innerHTML = "";
   document.getElementById("countryError").innerHTML = "";
   document.getElementById("zipcodeError").innerHTML = "";
-  
-  // 4) VALIDATE EVERY FIELDS
-  // First name validation
-  if (firstname === "" || firstname.length > 20) {
-    document.getElementById("firstnameError").innerHTML = "The first name is required and cannot be greater than 20 characters.";
+
+  // 4) VALIDATE EVERY FIELD
+  // First name validation (Only letters, max 20 characters)
+  if (!/^[A-Za-z]+$/.test(firstname) || firstname.length > 20) {
+    document.getElementById("firstnameError").innerHTML = "First name must contain only letters and be no more than 20 characters.";
     if (!firstErrorField) firstErrorField = document.getElementById("firstname");
   } else {
     validFirstname = true;
   }
 
-  // Last Name Validation
-  if (lastname === "" || lastname.length > 20) {
-    document.getElementById("lastnameError").innerHTML = "The last name is required and cannot be greater than 20 characters.";
+  // Last Name Validation (Only letters, max 20 characters)
+  if (!/^[A-Za-z]+$/.test(lastname) || lastname.length > 20) {
+    document.getElementById("lastnameError").innerHTML = "Last name must contain only letters and be no more than 20 characters.";
     if (!firstErrorField) firstErrorField = document.getElementById("lastname");
   } else {
     validLastname = true;
@@ -85,15 +83,15 @@ function validateForm() {
   } else {
     validUsername = true;
   }
-  
+
   // Password Validation
   if (!password.match(passwordRequirments)) {
-    document.getElementById("passwordError").innerHTML = "The password is required and cannot be greater than 7 characters, 1 upper, 1 lower, 1 number, and 1 special character.";
+    document.getElementById("passwordError").innerHTML = "The password must contain 1 upper, 1 lower, 1 number, 1 special character, and be at most 7 characters.";
     if (!firstErrorField) firstErrorField = document.getElementById("password");
   } else {
     validPassword = true;
   }
-  
+
   // Address validation
   if (address === "") {
     document.getElementById("addressError").innerHTML = "The address is required.";
@@ -101,7 +99,7 @@ function validateForm() {
   } else {
     validAddress = true;
   }
-  
+
   // City validation
   if (city === "") {
     document.getElementById("cityError").innerHTML = "The city is required.";
@@ -109,7 +107,7 @@ function validateForm() {
   } else {
     validCity = true;
   }
-  
+
   // State validation
   if (state === "") {
     document.getElementById("stateError").innerHTML = "The state is required.";
@@ -117,7 +115,7 @@ function validateForm() {
   } else {
     validState = true;
   }
-  
+
   // Country validation
   if (country === "") {
     document.getElementById("countryError").innerHTML = "The country is required.";
@@ -125,11 +123,11 @@ function validateForm() {
   } else {
     validCountry = true;
   }
-  
-  // Zipcode validate
-  if (country === "US") {  // Use "US" for United States
-    if (zipcode === "" || zipcode.length !== 5) {
-      document.getElementById("zipcodeError").innerHTML = "The zipcode is required (and must be 5 digits) if you live in the United States.";
+
+  // Zipcode validation (Required only if country is "US")
+  if (country === "US") {
+    if (zipcode === "" || zipcode.length !== 5 || isNaN(zipcode)) {
+      document.getElementById("zipcodeError").innerHTML = "Zipcode must be 5 digits if you live in the United States.";
       if (!firstErrorField) firstErrorField = document.getElementById("zipcode");
     } else {
       validZipcode = true;
@@ -138,7 +136,7 @@ function validateForm() {
     validZipcode = true;
   }
 
-  // 5) SET FOCUS 
+  // 5) SET FOCUS
   if (firstErrorField) {
     firstErrorField.focus();
     return false;
@@ -146,19 +144,15 @@ function validateForm() {
 
   // 6) RETURN FINAL VALIDATION RESULT
   return validFirstname && validLastname && validEmail && validPhone && 
-    validUsername && validPassword && validAddress && validCity && 
-    validState && validCountry && validZipcode;
+         validUsername && validPassword && validAddress && validCity && 
+         validState && validCountry && validZipcode;
 }
 
-// Function to insert dashes
+// Function to format phone number with dashes
 function formatPhoneNumber() {
   var phone = document.getElementById("phonenumber").value;
-  var phoneError = document.getElementById("phoneError");
+  var cleanPhone = phone.replace(/\D/g, ""); // Remove non-numeric characters
 
-  // Remove characters that are not numbers
-  var cleanPhone = phone.replace(/\D/g, "");
-
-  // Automatically insert dashes based on phone number length
   if (cleanPhone.length <= 3) {
     phone = cleanPhone;
   } else if (cleanPhone.length <= 6) {
@@ -167,8 +161,5 @@ function formatPhoneNumber() {
     phone = cleanPhone.slice(0, 3) + "-" + cleanPhone.slice(3, 6) + "-" + cleanPhone.slice(6, 15);
   }
 
-  // Update the phone number field with dashes
   document.getElementById("phonenumber").value = phone;
 }
-
-
