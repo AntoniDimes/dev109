@@ -41,7 +41,7 @@ function validateForm() {
   document.getElementById("zipcodeError").innerHTML = "";
 
   // 4) VALIDATE EVERY FIELD
-  // First name validation (Only letters, max 20 characters)
+  // First name validation
   if (!/^[A-Za-z]+$/.test(firstname) || firstname.length > 20) {
     document.getElementById("firstnameError").innerHTML = "First name must contain only letters and be no more than 20 characters.";
     if (!firstErrorField) firstErrorField = document.getElementById("firstname");
@@ -49,7 +49,7 @@ function validateForm() {
     validFirstname = true;
   }
 
-  // Last Name Validation (Only letters, max 20 characters)
+  // Last Name Validation 
   if (!/^[A-Za-z]+$/.test(lastname) || lastname.length > 20) {
     document.getElementById("lastnameError").innerHTML = "Last name must contain only letters and be no more than 20 characters.";
     if (!firstErrorField) firstErrorField = document.getElementById("lastname");
