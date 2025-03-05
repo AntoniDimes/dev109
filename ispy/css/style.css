@@ -1,0 +1,81 @@
+body {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  background-color: #6CABDD;
+}
+
+h1 {
+  font-family: 'MinecrafterAltRegular';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 50px;
+}
+
+button {
+  font-family: 'MinecrafterAltRegular';
+  font-weight: normal;
+  font-style: normal;
+}
+
+p {
+   font-family: 'MinecraftiaRegular';
+   font-weight: normal;
+   font-style: normal;
+   font-size: 24px;
+}
+
+li {
+   font-family: 'MinecraftiaRegular';
+   font-weight: normal;
+   font-style: normal;
+   font-size: 15px;
+}
+
+#replay-button {
+  background-color: #2fd5cd;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+#replay-button:hover {
+  background-color: #2fadd5;
+}
+
+p {
+  text-decoration: underline;
+}
+
+#game-container {
+  position: relative;
+  display: block;
+}
+
+.clickable {
+  position: absolute;
+  display: block;
+  background: rgba(255, 0, 0, 0); /* Transparent */
+}
+
+li {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  font-size: 18px;
+  margin: 5px;
+}
