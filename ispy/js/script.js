@@ -61,7 +61,7 @@ function loadRandomImage() {
 
   // Get the position of the items accordingly to the current image
   const gameContainer = document.querySelector("#game-container");
-  
+
   // Remove the old items
   document.querySelectorAll(".clickable").forEach(e => e.remove()); 
 
@@ -71,15 +71,40 @@ function loadRandomImage() {
     clickable.href = "#";
     clickable.title = item.name;
     clickable.className = "clickable";
-    clickable.style.left = item.left;
-    clickable.style.top = item.top;
-    clickable.style.width = item.width;
-    clickable.style.height = item.height;
+
+    // Set data- attributes for positioning
+    clickable.setAttribute("data-left", item.left);
+    clickable.setAttribute("data-top", item.top);
+    clickable.setAttribute("data-width", item.width);
+    clickable.setAttribute("data-height", item.height);
+
     gameContainer.appendChild(clickable);
   });
+  
+  // Adjust positions
+  adjustClickableAreas();
 
   // Add event listeners
   addEventListeners();
+}
+
+function adjustClickableAreas() {
+  let img = document.querySelector("#game-container img");
+  let imgWidth = img.clientWidth;  // Get displayed image width
+  let imgHeight = img.clientHeight; // Get displayed image height
+
+  document.querySelectorAll(".clickable").forEach(item => {
+    let originalLeft = parseFloat(item.dataset.left);
+    let originalTop = parseFloat(item.dataset.top);
+    let originalWidth = parseFloat(item.dataset.width);
+    let originalHeight = parseFloat(item.dataset.height);
+
+    // Scale positions based on the image's real size
+    item.style.left = (originalLeft * imgWidth) + "px";
+    item.style.top = (originalTop * imgHeight) + "px";
+    item.style.width = (originalWidth * imgWidth) + "px";
+    item.style.height = (originalHeight * imgHeight) + "px";
+  });
 }
 
 // Function to cross the item after found
@@ -113,6 +138,13 @@ function addEventListeners() {
       let itemName = this.getAttribute("title").toLowerCase().replace(" ", "-");
       foundItem(itemName);
     });
+
+    // Adjust positions based on data attributes
+    clickable.style.position = 'absolute'; // Ensure that the items are positioned absolutely within the container
+    clickable.style.left = clickable.getAttribute("data-left");
+    clickable.style.top = clickable.getAttribute("data-top");
+    clickable.style.width = clickable.getAttribute("data-width");
+    clickable.style.height = clickable.getAttribute("data-height");
   });
 }
 
