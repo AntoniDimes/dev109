@@ -34,6 +34,11 @@ li {
 	padding: 0.5em 0;
    }
 
+.image_solution {
+  height: 175px;
+  width: 250px;
+}
+
 .article {
   height: 20em;
   margin-bottom: 1em;
