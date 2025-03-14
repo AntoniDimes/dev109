@@ -1,1 +1,119 @@
+* {
+   font-family: 'LemonRegular', Verdana, sans-serif;
+   color: #26605c;
+   text-align: center;
+   }
 
+h1 {
+   font-family: 'LemonRegular';
+   font-weight: bold;
+   font-style: normal;
+   color: #e1e0d2;
+}
+
+img {
+  border: 0;
+}
+
+body {
+	width: 90%;
+    margin: 0 auto;
+   }
+
+#nav, #feature, #footer {
+	margin: 1%;
+   }
+
+li {
+	display: inline;
+	padding: 0.5em;
+   }
+
+#nav, #footer {
+	background-color: #b697b6;
+	padding: 0.5em 0;
+   }
+
+.article {
+  height: 20em;
+  margin-bottom: 1em;
+}
+
+#solution {
+  font-family: "Times New Roman", serif;
+  font-weight: bold;
+}
+
+.feature {
+  width: 68%;
+  float: left;
+  background-color: #ede5a6;
+  margin: 1%;
+}
+
+.images {
+  width: 28%; 
+  float: left;
+  background-color: #ede5a6;
+  margin: 1%;
+}
+
+.css {
+  width: 48%;
+  float: left;
+  background-color: #ede5a6;
+  margin: 1%;
+  height: 1450px;
+}
+
+.html {
+  width: 48%; 
+  float: left;
+  background-color: #ede5a6;
+  margin: 1%;
+  height: 1450px;
+}
+
+#about {
+  background-color: #ede5a6;
+  height: 20em;
+  margin: 1%;
+}
+
+#aHeader {
+  background-color: #ede5a6;
+  height: 1.5em;
+  margin: 1%;
+}
+
+p {
+  font-family: "Times New Roman", serif;
+  font-weight: bold;
+}
+
+.artifact {
+  background-color: #ede5a6;
+  height: 18em;
+  margin: 1%;
+}
+
+.course {
+  background-color: #ede5a6;
+  height: 10em;
+  margin: 1%;
+}
+
+#thanks {
+  font-size: 50px;
+}
+
+#content {
+  overflow: hidden;
+}
+
+body {
+  background-image: url("https://i.ibb.co/SXgrbpgf/upscalemedia-transformed.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
