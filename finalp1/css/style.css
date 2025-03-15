@@ -44,7 +44,7 @@ li {
   margin-bottom: 1em;
 }
 
-#solution {
+.solution {
   font-family: "Times New Roman", serif;
   font-weight: bold;
 }
@@ -104,7 +104,7 @@ p {
 
 .course {
   background-color: #ede5a6;
-  height: 10em;
+  height: 12em;
   margin: 1%;
 }
 
