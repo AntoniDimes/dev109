@@ -79,13 +79,6 @@ li {
   height: 1450px;
 }
 
-#about {
-  background-color: #ede5a6;
-  height: 20em;
-  margin: 1%;
-  font-size: 18px;
-}
-
 #aHeader {
   background-color: #ede5a6;
   height: 1.5em;
@@ -123,3 +116,80 @@ body {
   background-size: cover;
   background-position: center;
 }
+
+#about {
+  background-color: #ede5a6;
+  height: 20em;
+  margin: 1%;
+  font-size: 18px;
+}
+
+#form {
+  background-color: #ede5a6;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 600px;
+  margin: 1% auto;
+  font-size: 18px;
+}
+
+form {
+  max-width: 100%; 
+  padding: 10px; 
+  background: none;
+  box-shadow: none; 
+  border-radius: 8px;
+}
+
+input[type="text"], textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  background-color: #fff; 
+}
+
+form label {
+  display: block;
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+div[id$="Error"] {
+  color: red;
+  font-size: 0.9em;
+  margin-top: 5px;
+}
+
+textarea {
+  height: 100px;
+  resize: vertical;
+}
+
+#nameError, #emailError,  {
+  color: red;
+  font-weight: bold;
+  font-size: 1em;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-top: 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #3de4ec;
+}
+
