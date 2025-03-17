@@ -4,6 +4,10 @@
    text-align: center;
    }
 
+#soccer {
+  border: none;
+}
+
 h1 {
    font-family: 'LemonRegular';
    font-weight: bold;
