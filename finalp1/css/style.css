@@ -124,6 +124,17 @@ body {
   font-size: 18px;
 }
 
+#creative {
+  background-color: #ede5a6;
+  height: auto;
+  margin: 1%;
+  font-size: 18px;
+}
+
+#fav:hover {
+  color: #6CABDD;
+}
+
 #form {
   background-color: #ede5a6;
   padding: 20px;
@@ -192,4 +203,3 @@ button {
 button:hover {
   background-color: #3de4ec;
 }
-
