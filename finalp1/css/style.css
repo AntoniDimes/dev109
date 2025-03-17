@@ -179,7 +179,7 @@ textarea {
   resize: vertical;
 }
 
-#nameError, #emailError,  {
+#nameError, #emailError {
   color: red;
   font-weight: bold;
   font-size: 1em;
